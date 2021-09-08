@@ -124,7 +124,8 @@ class ItDashboard:
                 self.browser.go_to(link)
                 self.browser.wait_until_page_contains_element('//div[@id="business-case-pdf"]')
                 self.browser.find_element('//div[@id="business-case-pdf"]').click()
-                self.browser.wait_until_page_does_not_contain_element('//div[@id="business-case-pdf"]').find_element_by_tag_name("span"):
+                self.browser.wait_until_page_does_not_contain_element('//div[@id="business-case-pdf"]'
+                                                                      ).find_element_by_tag_name("span")
                 sleep(3)
                 self.browser.go_to(url)
                 self.browser.wait_until_page_contains_element('//*[@id="investments-table-object_length"]/label/select',
